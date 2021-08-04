@@ -18,5 +18,6 @@ public class AudioContoller : MonoBehaviour
         public AudioClip StartSound;
         public AudioClip ReStartSound;
         public AudioClip GameOverSound;
+        public AudioClip SpkieOutSound;
     }
 }

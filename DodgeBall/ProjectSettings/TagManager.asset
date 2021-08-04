@@ -9,6 +9,7 @@ TagManager:
   - RightWall
   - DownWall
   - LeftWall
+  - Spike
   layers:
   - Default
   - TransparentFX

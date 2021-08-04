@@ -8,6 +8,7 @@ public class GameEventController : MonoBehaviour
 {
     [SerializeField] private Timer timer;
     [SerializeField] private BallManager ballManager;
+    [SerializeField] private TrapManager trapManager;
     [SerializeField] public List<TimeEvent> timeEvents;
     [SerializeField] public List<TimeEvent> everyTimeEvents;
     private List<IEnumerator> everyTimeIE = new List<IEnumerator>();
@@ -89,8 +90,15 @@ public class GameEventController : MonoBehaviour
             case GameEvent.AddBallSpeed:
                 ballManager.AddBallsSpeed(_timeEvent.addBallSpeed);
                 break;
+            case GameEvent.TrapActive:
+                trapManager.TrapActive();
+                break;
+            case GameEvent.AddTrapAcitveCount:
+                trapManager.AddTrapActiveCount(_timeEvent.addTrapActiveCount);
+                break;
         }
     }
+
     public Vector3 test = Vector3.zero;
 
     [System.Serializable]
@@ -100,11 +108,14 @@ public class GameEventController : MonoBehaviour
         public GameEvent gameEvent;
         public int addBall;
         public float addBallSpeed;
+        public int addTrapActiveCount;
     }
 
     public enum GameEvent
     {
         AddBall,
         AddBallSpeed,
+        TrapActive,
+        AddTrapAcitveCount
     }
 }

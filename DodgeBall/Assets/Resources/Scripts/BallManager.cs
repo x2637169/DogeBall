@@ -29,6 +29,7 @@ public class BallManager : MonoBehaviour
             GameObject obj = Instantiate(respawnObj, GetPostiton(), Quaternion.identity, respawnParent);
             BallController ballController = obj.GetComponent<BallController>();
             ballController.outRange = new BallController.OutRange(ballOutRange.minX, ballOutRange.maxX, ballOutRange.minY, ballOutRange.maxY);
+            ballController.AddSpeed(ballSpeed);
             balls.Add(obj);
         }
     }

@@ -12,7 +12,9 @@ ScriptsOnlyBuild:
     - JoyStick
     - PlayerController
     - PlayerManager
+    - SpikeController
     - Timer
+    - TrapManager
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
     Unity.2D.Animation.Editor.dll:
@@ -38,8 +40,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -76,62 +80,72 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 62
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11386}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11468}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11792}
     - Class: 114
-      Script: {instanceID: 12564}
+      Script: {instanceID: 12566}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 12636}
     - Class: 114
-      Script: {instanceID: 12648}
+      Script: {instanceID: 12650}
     - Class: 114
-      Script: {instanceID: 13010}
+      Script: {instanceID: 13012}
     - Class: 114
-      Script: {instanceID: 13046}
+      Script: {instanceID: 13048}
     - Class: 114
-      Script: {instanceID: 13264}
+      Script: {instanceID: 13266}
     - Class: 114
-      Script: {instanceID: 13336}
+      Script: {instanceID: 13338}
     - Class: 114
-      Script: {instanceID: 13346}
+      Script: {instanceID: 13348}
     - Class: 114
-      Script: {instanceID: 13458}
+      Script: {instanceID: 13460}
     - Class: 114
-      Script: {instanceID: 13892}
+      Script: {instanceID: 13894}
     - Class: 114
-      Script: {instanceID: 13914}
+      Script: {instanceID: 13916}
     - Class: 114
-      Script: {instanceID: 14158}
+      Script: {instanceID: 14100}
     - Class: 114
-      Script: {instanceID: 14270}
+      Script: {instanceID: 14162}
     - Class: 114
-      Script: {instanceID: 14294}
+      Script: {instanceID: 14274}
     - Class: 114
-      Script: {instanceID: 14380}
+      Script: {instanceID: 14298}
     - Class: 114
-      Script: {instanceID: 14398}
+      Script: {instanceID: 14384}
     - Class: 114
-      Script: {instanceID: 14448}
+      Script: {instanceID: 14402}
     - Class: 114
-      Script: {instanceID: 14490}
+      Script: {instanceID: 14452}
     - Class: 114
-      Script: {instanceID: 14732}
+      Script: {instanceID: 14494}
     - Class: 114
-      Script: {instanceID: 15138}
+      Script: {instanceID: 14736}
+    - Class: 114
+      Script: {instanceID: 15084}
+    - Class: 114
+      Script: {instanceID: 15144}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -481,7 +495,7 @@ ScriptsOnlyBuild:
     className: SwapFullSkin
   - hash:
       serializedVersion: 2
-      Hash: 2d16f9c5938b60d39437dcff6e2e110a
+      Hash: 041cfe63302b24e4ca76258e29a32a49
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameEventController
@@ -577,7 +591,13 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 7438bc0a416f484398ae5fa79599785a
+      Hash: cd3bd4d2fce89e47bc0f748845dd6a84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrapManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8b7ccea9fec184208ce6653a0f85077c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AudioContoller
@@ -697,6 +717,12 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
+      Hash: 4a318578daf62c8a426412fe423ada54
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpikeController
+  - hash:
+      serializedVersion: 2
       Hash: 9726bc46e15d44429bd38fb013657f1e
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
@@ -752,4 +778,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/x21637169/Desktop/DogeBall_v0.1.apk
+  playerPath: C:/Users/x21637169/Desktop/DogeBall_v0.2.apk

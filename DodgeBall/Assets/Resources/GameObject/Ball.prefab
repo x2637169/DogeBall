@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ae8270d534f764c81b62ad8ccb2e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 6
   ballCollider: {fileID: 215340711857832912}
   ballSprite: {fileID: 215340711857832911}
   audioSource: {fileID: 895706627543363651}
